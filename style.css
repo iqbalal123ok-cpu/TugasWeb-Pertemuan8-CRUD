@@ -1,0 +1,58 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: #f4f6f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+.container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+
+.topbar { background: #1f2937; padding: 14px 0; }
+.brand  { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+
+main.container { padding-top: 24px; padding-bottom: 40px; min-height: 70vh; }
+.footer { text-align: center; padding: 16px 0; color: #777; font-size: .85rem; }
+
+h1 { margin: 0 0 16px; font-size: 1.5rem; }
+.page-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.page-head h1 { margin: 0; }
+
+.card { background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08); max-width: 560px; }
+
+.table-wrap { overflow-x: auto; background: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 10px 14px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+thead th { background: #f9fafb; font-size: .85rem; text-transform: uppercase; letter-spacing: .03em; color: #555; }
+tbody tr:hover { background: #fafafa; }
+.num { text-align: right; }
+.empty { text-align: center; color: #888; padding: 24px; }
+
+.field { margin-bottom: 16px; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+input[type="text"], input[type="number"], select {
+    width: 100%; padding: 9px 10px; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; background: #fff;
+}
+input:focus, select:focus { outline: 2px solid #93c5fd; border-color: #3b82f6; }
+.error { color: #b91c1c; display: block; margin-top: 4px; }
+
+.btn {
+    display: inline-block; padding: 9px 16px; border: 0; border-radius: 6px;
+    font-size: .95rem; cursor: pointer; text-decoration: none; color: #fff;
+}
+.btn-primary   { background: #2563eb; }
+.btn-secondary { background: #6b7280; }
+.btn-warning   { background: #d97706; }
+.btn-danger    { background: #dc2626; }
+.btn-small     { padding: 5px 10px; font-size: .85rem; }
+.btn:hover { opacity: .9; }
+
+.actions { display: flex; gap: 8px; margin-top: 8px; }
+.row-actions { white-space: nowrap; }
+form.inline { display: inline; }
+
+.alert { padding: 12px 16px; border-radius: 6px; margin-bottom: 16px; }
+.alert-success { background: #dcfce7; color: #166534; }
+.alert-error   { background: #fee2e2; color: #991b1b; }
