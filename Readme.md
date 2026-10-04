@@ -1,7 +1,4 @@
 
-<p align="center">
-  <img src="assets/screenshot-app.png" alt="Tampilan Aplikasi CRUD" width="600">
-</p>
 
 # Aplikasi CRUD Inventaris (PHP Native & PDO)
 
@@ -11,7 +8,7 @@ Repository ini dibuat untuk menyelesaikan Tugas Rutin 8: CRUD Inventaris pada ma
 
 ## Tampilan Aplikasi
 
-![Tampilan Aplikasi CRUD](assets/screenshot-app.png)
+![Tampilan Aplikasi CRUD](https://raw.githubusercontent.com/username-kamu/TugasWeb-Pertemuan8-CRUD/main/assets/screenshot.png)
 
 ## Fitur Utama
 
