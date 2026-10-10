@@ -21,15 +21,43 @@ Repository ini dibuat untuk menyelesaikan Tugas Rutin 8: CRUD Inventaris pada ma
 
 ## Langkah-Langkah Import Database (schema.sql)
 
-Jika kamu ingin menjalankan proyek ini di komputer lokal, ikuti cara import database berikut:
+Berikut adalah panduan untuk mengimpor database menggunakan **XAMPP** (menggantikan langkah HeidiSQL/Laragon):
 
-1. Nyalakan web server lokal (Laragon atau XAMPP), pastikan layanan Apache dan MySQL berjalan
-2. Buka pengelola database (misalnya HeidiSQL melalui panel Laragon).
-3. Klik menu File di pojok kiri atas, lalu pilih Load SQL file... (atau tekan Ctrl + O).
-4. Pilih file schema.sql yang berada di dalam folder utama proyek ini, lalu klik Open
-5. Jalankan kode SQL tersebut dengan mengeklik ikon Segitiga Hijau (Run) atau menekan tombol F9.
-6. Lakukan Refresh (F5), dan database inventaris_db beserta tabel dan data awalnya akan otomatis siap digunakan.
+1. **Nyalakan Web Server Lokal**
+* Buka aplikasi **XAMPP Control Panel**.
+* Pastikan modul **Apache** dan **MySQL** dalam keadaan aktif (klik tombol **Start** sampai berwarna hijau).
+* **Cara verifikasi:** Pastikan status di samping Apache dan MySQL menunjukkan tulisan "Running" dengan nomor port yang aktif.
 
+
+2. **Buka phpMyAdmin**
+* Buka browser internet kamu (Chrome, Edge, dll.).
+* Ketik alamat berikut di address bar: `http://localhost/phpmyadmin/` lalu tekan Enter.
+* **Cara verifikasi:** Halaman dasbor phpMyAdmin akan terbuka dan tampil di layar browser.
+
+
+3. **Buat Database Baru**
+* Di panel sebelah kiri phpMyAdmin, klik tombol **New** (Baru).
+* Pada kolom *Database name*, ketik: `inventaris_db`.
+* Pada pilihan *Collation* di sebelah kanannya, pilih `utf8mb4_general_ci`.
+* Klik tombol **Create** (Buat).
+* **Cara verifikasi:** Nama `inventaris_db` akan muncul di daftar database sebelah kiri.
+
+
+4. **Pilih Database yang Telah Dibuat**
+* Klik pada nama database `inventaris_db` di daftar sebelah kiri untuk membukanya.
+* **Cara verifikasi:** Tampilan utama di kanan akan berubah dan menunjukkan bahwa kamu sedang berada di dalam database `inventaris_db` (biasanya ada tulisan "No tables found in database").
+
+
+5. **Import File SQL**
+* Pada menu bagian atas, klik tab **Import**.
+* Klik tombol **Choose File** (Pilih File) atau **Browse...**.
+* Cari dan pilih file `schema.sql` yang berada di dalam folder utama proyek kamu, lalu klik **Open**.
+* **Cara verifikasi:** Nama file `schema.sql` akan tampil di sebelah tombol *Choose File*.
+
+
+6. **Jalankan Proses Import**
+* Gulir ke bagian paling bawah halaman, lalu klik tombol **Go** (Kirim) berwarna hijau.
+* **Cara verifikasi:** Muncul pesan hijau bertuliskan *"Import has been successfully finished"* dan daftar tabel dari proyek kamu akan langsung muncul di panel sebelah kiri.
 ---
 
 ## Cara Menjalankan Program
