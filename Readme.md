@@ -34,4 +34,4 @@ Jika kamu ingin menjalankan proyek ini di komputer lokal, ikuti cara import data
 
 ## Cara Menjalankan Program
 
-1. Buka browser dan akses melalui URL lokal:(atau http://http://localhost/inventaris/).
+1. Buka browser dan akses melalui URL lokal:(atau http://localhost/inventaris/).
